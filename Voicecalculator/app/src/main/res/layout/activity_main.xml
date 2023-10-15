@@ -1,0 +1,101 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.29" >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20dp" >
+        </Button>
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/
+            android:layout_centerHorizontal="true"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentRight="true"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="64dp"
+            android:textAlignment="center"
+            android:text="Calculate" />
+
+        <Button
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="ChangeColor"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add"
+            android:layout_marginTop="47dp"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/divide"
+            android:layout_alignBottom="@+id/divide"
+            android:layout_alignLeft="@+id/sub"
+            android:text="log" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/log"
+            android:layout_alignBottom="@+id/log"
+            android:layout_alignParentRight="true"
+            android:text="C" />
+
+    </RelativeLayout>
+
+</TableLayout>
